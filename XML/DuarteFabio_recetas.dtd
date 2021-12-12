@@ -1,0 +1,21 @@
+<!ELEMENT recetas (receta,receta+)>
+<!ATTLIST recetas autor CDATA #FIXED "FabioDuarte">
+<!ELEMENT receta (nombre , categoria, infoGeneral*, ingredientes+, preparacion+)>
+<!ATTLIST receta idReceta ID #REQUIRED fechaAlta CDATA #IMPLIED>
+<!ELEMENT nombre  (#PCDATA)>
+<!ELEMENT categoria (subcategoria?)>
+<!ELEMENT subcategoria (#PCDATA)>
+<!ELEMENT infoGeneral ( fotos*, enlace, comensales, tiempo, dificultad, descripcion?)>
+<!ELEMENT foto ANY>
+<!ELEMENT enlace (#PCDATA)>
+<!ELEMENT comensales (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ATTLIST tiempo unidadTiempo (minutos | hora) "minutos">
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT descripcion(#PCDATA)>
+<!ELEMENT ingredientes (ingrediente, ingrediente, ingrediente, ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED unidadDeMedida (gramo | taza | cucharada | cuchara | mililitro)>
+<!ELEMENT preparacion (paso, paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso orden ID #REQUIRED>

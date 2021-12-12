@@ -1,0 +1,29 @@
+h1{
+font-family: sans-serif;
+}
+.cuadro{
+    font-style: italic;
+    width: 90px;
+    height: 50PX;
+    padding: 15px;
+    border: 1px solid rgb(58, 240, 185);
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+    visibility: visible;
+    background-color: rgb(58, 240, 185);
+}
+.cuadro1{
+    font-style: italic;
+    width: 90px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid rgb(58, 240, 185);
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    float: right;
+    visibility: visible;
+    background-color: rgb(58, 240, 185);
+}

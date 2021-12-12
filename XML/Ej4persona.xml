@@ -1,0 +1,10 @@
+﻿
+<!DOCTYPE persona SYSTEM "Ej4persona.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+   <nombre>Maria</nombre>
+   <mujer></mujer>
+   <fecha_de_nacimiento dia="21" mes="10" anyo="2000">
+   </fecha_de_nacimiento>
+   <ciudad>Bilbao</ciudad>
+</persona>

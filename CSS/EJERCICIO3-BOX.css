@@ -1,0 +1,45 @@
+.figure1{
+    height: 175px;
+    width: 150px;
+    border: 1px solid black;
+}
+.figure2{
+    width: 100%;
+    height: 40px;
+    border: 5px solid black;
+    padding: 15px 0px 5px 15px;
+}
+.figure3{
+    height: 15px;
+    width: 90%;
+    border: 1px solid rgba(241, 70, 70, 0.667);
+    margin: 25px;
+}
+.figure4{
+    
+    height: 100px;
+    width: 400px;
+    border: 3PX solid rgb(73, 238, 250);
+    border-radius: 10px;;
+}
+.figure5{
+    width: 100%;
+    height: 15px;
+    border: 1px solid black;
+    
+}
+.figure6{
+    margin-left: 2%;
+    width: 100%;
+    height: 15px;
+    border: 1px solid black;
+    
+}
+.figure7{
+    width: 80px;
+    padding: 15px;
+    border: 4px solid rgb(160, 252, 244);
+    border-radius: 10px;
+    margin-left: 50%;
+    margin-top: 25px;
+}

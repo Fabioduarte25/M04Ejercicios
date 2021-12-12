@@ -1,0 +1,45 @@
+
+h1{
+    color: red;
+    font-family: ;
+}
+h2{
+    color: grey;
+    text-decoration-line: underline;
+    font-weight: bold;
+    
+    
+}
+span{
+    color:red
+}
+p{
+    font-style: italic;
+}
+li{
+    list-style-type: upper-roman;
+}
+.Franky {
+    background-color: green;
+}
+.Avi{
+    background-color: yellow;
+}
+.Tony{
+    background-color: blueviolet;
+}
+.Borys{
+    background-color: royalblue;
+}
+h2~h2{
+    color: #999595;
+}
+h2~h2~h2{
+    color:#7c7979;
+}
+h2~h2~h2~h2{
+    color:#6b6b6b;
+}
+a{
+    color: #29f55c;
+}

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta,receta+)>
+<!ATTLIST recetas autor CDATA #FIXED "FabioDuarte">
+<!ELEMENT receta (nombre , categoria, infoGeneral*, ingredientes+, preparacion+)>
+<!ATTLIST receta idReceta ID #REQUIRED fechaAlta CDATA #IMPLIED>
+<!ELEMENT nombre  (#PCDATA)>
+<!ELEMENT categoria (#PCDATA | subcategoria)*>
+<!ELEMENT subcategoria (#PCDATA)>
+<!ELEMENT infoGeneral ( foto*, enlace, comensales, tiempo, dificultad, descripcion?)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT enlace (#PCDATA)>
+<!ELEMENT comensales (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ATTLIST tiempo unidadTiempo (minutos | hora) "minutos">
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente, ingrediente, ingrediente, ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED unidadDeMedida (gramo | taza | cucharada | cuchara | mililitro) "gramo">
+<!ELEMENT preparacion ( paso, paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso orden ID #REQUIRED>
+]>
+<recetas autor="FabioDuarte">  
+  <receta idReceta="primerplato" >
+      <nombre>Empanadas argentinas de carne</nombre>
+      <categoria>
+           aperitivo
+        <subcategoria> </subcategoria>
+      </categoria>
+      <infoGeneral>
+        <foto>empanada.jpg</foto>
+        <enlace>https://www.pequerecetas.com/receta/empanadas-de-carne-argentinas/</enlace>
+        <comensales>4</comensales>
+        <tiempo unidadTiempo="minutos">120</tiempo>
+        <dificultad> media </dificultad>
+        <descripcion>La palabra empanada proviene del castellano «empanar»,
+         cuya primera acepción es «encerrar algo en masa o pan para cocerlo en el horno». 
+        Se trataba de rellenar panes con viandas o vegetales (o de ambas cosas) (in-panis, in-panata)
+        , que los pastores y viajeros llevaban para consumirlos en el campo. 
+        Con el tiempo, se acabó cociendo la masa de pan junto con su relleno,
+         y más tarde se elaboraron masas específicas para envolver el relleno.
+         Este tipo de preparación dio origen a alimentos como los calzone italianos,
+         las empanadas gallegas y los Cornish pasties británicos.</descripcion>
+      </infoGeneral>
+      <ingredientes>
+        <ingrediente cantidad="500" unidadDeMedida="gramo">cebollas picadas gruesas</ingrediente>
+        <ingrediente cantidad="250" unidadDeMedida="gramo">carne de ternera picada</ingrediente>
+        <ingrediente cantidad="1" unidadDeMedida="cucharada">pimenton</ingrediente>
+        <ingrediente cantidad="1/2" unidadDeMedida="cuchara">comino</ingrediente>
+        <ingrediente cantidad="1/4" unidadDeMedida="cuchara">pimienta blanca</ingrediente>
+        <ingrediente cantidad="1" unidadDeMedida="cucharada">sal</ingrediente>
+        <ingrediente cantidad="50" unidadDeMedida="gramo">pasas sin semillas</ingrediente>
+        <ingrediente cantidad="3" unidadDeMedida="cucharada">caldo</ingrediente>
+        <ingrediente cantidad="2" unidadDeMedida="gramo">huevo cocido</ingrediente>
+        <ingrediente cantidad="250" unidadDeMedida="gramo">harina</ingrediente>
+        <ingrediente cantidad="1" unidadDeMedida="cuchara">manteca de cerdo</ingrediente>
+        <ingrediente cantidad="1/2" unidadDeMedida="taza">leche</ingrediente>
+        <ingrediente cantidad="1/2" unidadDeMedida="cucharada">azucar</ingrediente>
+        <ingrediente cantidad="1" unidadDeMedida="gramo">yema</ingrediente>
+      </ingredientes>
+      <preparacion>
+        <paso orden="masa">Para hacer la masa. Ponemos la harina encima de la mesa en forma de corona y en el centro la manteca fundida,
+         la leche, el azúcar y la yema. Unimos todo sin amasar demasiado y estiramos a un espesor fino.
+          Cortamos discos de unos 12 cm. de diámetro.</paso>
+        <paso orden="relleno">Para hacer el relleno. Rehogar la cebolla en un poco de aceite hasta que este tierna.
+         Agregar la carne y mezclar hasta que se blanquee. Sazonar con el pimentón, tomillo, sal, y pimienta. 
+         Añadir el caldo, volver a mezclar y retirar.
+        Agregar las pasas y las aceitunas .
+         En el momento de preparar las empanadas añadir a cada una un trozo de huevo cocido.</paso>
+        <paso orden="montar">Poner sobre un disco de masa, un poco de relleno.
+         Humedecer con agua los bordes de la masa y plegar la masa para unir por los bordes.
+         Ponerlas al horno durante 25 min pintándolas previamente con huevo batido </paso>
+      </preparacion>
+  </receta>
+  
+   <receta idReceta="segundoplato" fechaAlta="">
+      <nombre>Pastafrola</nombre>
+      <categoria>
+          postre
+        <subcategoria>tartaleta de masa quebrada</subcategoria>
+      </categoria>
+      <infoGeneral>
+        <foto>pasta.jpg</foto>
+        <enlace>https://www.directoalpaladar.com/postres/como-hacer-pasta-frola-receta-delicioso-dulce-argentino-que-se-deshace-bo</enlace>
+        <comensales>10</comensales>
+        <tiempo unidadTiempo="hora">1</tiempo>
+        <dificultad>media</dificultad>
+        <descripcion>La pasta frola es un dulce argentino, primo hermano de la crostata italiana y la tarta linzer suiza, 
+        que es una verdadera delicia. </descripcion>
+      </infoGeneral>
+      <ingredientes>
+        <ingrediente cantidad="200" unidadDeMedida="gramo">harina de trigo</ingrediente>
+        <ingrediente cantidad="100" unidadDeMedida="gramo">azucar</ingrediente>
+        <ingrediente cantidad="2" unidadDeMedida="gramo">yema de huevo</ingrediente>
+        <ingrediente cantidad="5" unidadDeMedida="mililitro">esencia de vainilla</ingrediente>
+        <ingrediente cantidad="100" unidadDeMedida="gramo">rayadura de limon</ingrediente>
+        <ingrediente cantidad="100" unidadDeMedida="gramo">mantequilla muy fria</ingrediente>
+        <ingrediente cantidad="250" unidadDeMedida="gramo">dulce de membrillo</ingrediente>
+        <ingrediente cantidad="75" unidadDeMedida="mililitro">agua</ingrediente>
+      </ingredientes>
+      <preparacion>
+        <paso orden="masaPostre">Para prepara la masa. En un recipiente amplio y hondo mezclamos la harina con el azúcar.
+         Añadimos una yema de huevo, la esencia de vainilla y la ralladura de medio limón y removemos bien. 
+         Cortamos la mantequilla cortada en dados y la incorporamos al resto de ingredientes a base de pellizcos, para que no se caliente en exceso.
+        Obtendremos una mezcla parecida a migas que terminamos de trabajar amasando ligeramente para homogeneizar. 
+        La idea es que la masa no coja calor, así que en cuanto la mezcla esté lista la envolvemos en papel film y
+        la guardamos en la nevera un mínimo de una hora, mejor si la dejáis más tiempo.</paso>
+        <paso orden="rellenoPostre">Para preparar el relleno solo hay que trocear el dulce de membrillo y calentarlo junto con el agua en un cacito
+         o en el microondas hasta obtener una especie de mermelada. 
+        Puede ser necesario añadir un poco más de agua. Dejamos enfriar completamente antes de usar. </paso>
+        <paso orden="montaje">Cuando la masa esté bien fría la dividimos en dos. Sobre una encimera espolvoreada con harina estiramos una de las mitades con ayuda de un rodillo
+         y cubrimos con ella la base y laterales de un molde de 26 cm (de base desmoldable). Extendemos el relleno por toda la superficie.
+
+        Repetimos la operación con la otra mitad de la masa y la cortamos en tiras de 1,5 cm. Colocamos sobre el relleno formando un enrejado. 
+        Pincelamos estas tiras de masa con yema de huevo y cocemos la pasta frola en el horno,
+        precalentado a 180 ºC con calor arriba y abajo, durante 30-35 minutos o hasta que esté dorada.</paso>
+        
+      </preparacion>
+  </receta>
+</recetas>
